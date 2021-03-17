@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .calc__fields .calc__fields-item--phone {
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper" id="app">
+
+    <!--    <calc></calc>-->
+
+    <section class="section">
+        <div class="section__title">
+            <h2>Получите расчет вашего проекта</h2>
+        </div>
+        <div class="calc">
+            <form enctype="multipart/form-data">
+                <div class="calc__service">
+                    <div class="calc__service-title">Выберите услугу</div>
+                    <div class="calc__service-list">
+                        <div class="calc__service-item">
+                            <input type="radio" name="service" value="dev" id="service-dev">
+                            <label for="service-dev"
+                                   class="calc__service-label calc__service-label--dev">Разработка</label>
+                        </div>
+                        <div class="calc__service-item">
+                            <input type="radio" name="service" value="ctx" id="service-ctx">
+                            <label for="service-ctx"
+                                   class="calc__service-label calc__service-label--ctx">Контекст</label>
+                        </div>
+                        <div class="calc__service-item">
+                            <input type="radio" name="service" value="smm" id="service-smm">
+                            <label for="service-smm"
+                                   class="calc__service-label calc__service-label--smm">SMM</label>
+                        </div>
+                        <div class="calc__service-item">
+                            <input type="radio" name="service" value="seo" id="service-seo">
+                            <label for="service-seo"
+                                   class="calc__service-label calc__service-label--seo">SEO</label>
+                        </div>
+                    </div>
+                </div>
+                <div clas s="calc__fields">
+                    <div class="row">
+                        <div class="column column--1-3">
+                            <div class="calc__fields-item">
+                                <input class="calc__fields-input" type="text" name="name" placeholder="Имя">
+                            </div>
+                        </div>
+                        <div class="column column--1-3">
+                            <div class="calc__fields-item calc__fields-item--phone">
+                                <input class="calc__fields-input" type="tel" name="phone"
+                                       placeholder="+7 (___) ___-__-__">
+                            </div>
+                        </div>
+                        <div class="column column--1-3">
+                            <div class="calc__fields-item">
+                                <input class="calc__fields-input" type="text" name="email"
+                                       placeholder="Электронная почта">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column column--1-3">
+                            <div class="calc__fields-item calc__fields-item--files">
+                                <input class="calc__fields-input" type="file" multiple name="files" id="calc-files">
+                                <label for="calc-files">Добавить файл(ы)</label>
+                            </div>
+                        </div>
+                        <div class="column column--2-3">
+                            <div class="calc__fields-item calc__fields-description">
+                                <textarea name="description" placeholder="Сообщение"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</div>
+
+<!--<script src="./dist/vue.js"></script>-->
+
+</body>
+</html>
