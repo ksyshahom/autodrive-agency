@@ -2,9 +2,9 @@
 
 let mix = require('laravel-mix');
 
-mix.js('src/vue.js', 'dist')
-    .vue()
-    .setPublicPath('dist');
+mix.setPublicPath('dist');
+mix.js('src/js/vue.js', './dist').vue();
+mix.sass('src/scss/main.scss', './dist');
 
 mix.webpackConfig({
     resolve: {
