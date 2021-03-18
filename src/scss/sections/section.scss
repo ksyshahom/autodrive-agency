@@ -1,0 +1,14 @@
+.section {
+  padding: 90px 0;
+
+  &--gray {
+    background-color: #F1F1F1;
+  }
+  &__title {
+    h2 {
+      font-family: Gilroy, Arial, serif;
+      font-weight: 700;
+      font-size: 50px;
+    }
+  }
+}
