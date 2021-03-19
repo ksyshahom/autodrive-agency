@@ -1,0 +1,47 @@
+.calc {
+
+  &__service-title {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 50px;
+    //font-style: normal;
+  }
+
+  &__service-list {
+    display: flex;
+    //justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  &__service-item {
+
+    input {
+      //visibility: hidden;
+      display: none;
+    }
+  }
+
+  &__service-label {
+    display: flex;
+    width: 180px;
+    height: 140px;
+    background-color: white;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 20px;
+
+    &--active{
+      background-color: $blue-color;
+      color: white;
+
+    }
+
+    div {
+      margin-bottom: 24px;
+      font-weight: 500;
+      font-size: 20px;
+
+
+    }
+  }
+}

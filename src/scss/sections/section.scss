@@ -1,14 +1,19 @@
 .section {
   padding: 90px 0;
 
-  &--gray {
-    background-color: #F1F1F1;
-  }
   &__title {
     h2 {
-      font-family: Gilroy, Arial, serif;
-      font-weight: 700;
-      font-size: 50px;
+      position: relative;
+      margin-bottom: 50px;
+      padding-left: 25px;
+
+      &:before {
+        content: '/';
+        position: absolute;
+        left: 0;
+        color: $blue-color;
+        font-weight: 900;
+      }
     }
   }
 }
