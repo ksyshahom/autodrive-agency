@@ -22,24 +22,32 @@
                         <div class="calc__service-title">Выберите услугу</div>
                         <div class="calc__service-list">
                             <div class="calc__service-item">
-                                <input type="radio" name="service" value="dev" id="service-dev">
+                                <input type="radio" name="service" value="dev" id="service-dev" checked>
                                 <label for="service-dev"
-                                       class="calc__service-label calc__service-label--active calc__service-label--dev"><div>Разработка</div></label>
+                                       class="calc__service-label calc__service-label--dev">
+                                    <div>Разработка</div>
+                                </label>
                             </div>
                             <div class="calc__service-item">
                                 <input type="radio" name="service" value="ctx" id="service-ctx">
                                 <label for="service-ctx"
-                                       class="calc__service-label calc__service-label--ctx"><div>Контекст</div></label>
+                                       class="calc__service-label calc__service-label--ctx">
+                                    <div>Контекст</div>
+                                </label>
                             </div>
                             <div class="calc__service-item">
                                 <input type="radio" name="service" value="smm" id="service-smm">
                                 <label for="service-smm"
-                                       class="calc__service-label calc__service-label--smm"><div>SMM</div></label>
+                                       class="calc__service-label calc__service-label--smm">
+                                    <div>SMM</div>
+                                </label>
                             </div>
                             <div class="calc__service-item">
                                 <input type="radio" name="service" value="seo" id="service-seo">
                                 <label for="service-seo"
-                                       class="calc__service-label calc__service-label--seo"><div>SEO</div></label>
+                                       class="calc__service-label calc__service-label--seo">
+                                    <div>SEO</div>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -51,12 +59,12 @@
                                 </div>
                             </div>
                             <div class="column column--1-3">
-                                <div class="calc__fields-item calc__fields-item--phone">
+                                <div class="calc__fields-item calc__fields-item--phone calc__fields-item--active calc__fields-item--valid">
                                     <input class="calc__fields-input" type="tel" name="phone"
                                            placeholder="+7 (___) ___-__-__">
                                 </div>
                             </div>
-                            <div class="column column--1-3">
+                            <div class="column column--1-3  column--last">
                                 <div class="calc__fields-item">
                                     <input class="calc__fields-input" type="text" name="email"
                                            placeholder="Электронная почта">
@@ -70,26 +78,33 @@
                                     <label for="calc-files">Добавить файл(ы)</label>
                                 </div>
                             </div>
-                            <div class="column column--2-3">
+                            <div class="column column--2-3  column--last">
                                 <div class="calc__fields-item calc__fields-description">
-                                    <textarea name="description" placeholder="Сообщение"></textarea>
+                                    <textarea name="description" placeholder="Сообщение" rows="1"></textarea>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="calc__submit">
-                        <div class="calc__submit-btn-wrapper">
-                            <button class="calc__submit-btn">Отправить</button>
-                        </div>
-                        <div class="calc__submit-agree-wrapper">
-                            <input type="checkbox" name="agree" value="true" id="calc-checkbox">
-                            <label for="calc-checkbox" class="calc__submit-agree">
-                                <div class="calc__submit-agree-checkbox"></div>
-                                <div class="calc__submit-agree-text">
-                                    Нажимая на кнопку «Отправить» вы соглашаетесь на обработку персональных данных в
-                                    соответствии с <a href="#" target="_blank">политикой конфиденциальности</a>.
+                        <div class="row row--center">
+                            <div class="column column--1-3">
+                                <div class="calc__submit-btn-wrapper">
+                                    <button class="calc__submit-btn">Отправить</button>
                                 </div>
-                            </label>
+                            </div>
+                            <div class="column column--2-3 column--last">
+                                <div class="calc__submit-agree-wrapper">
+                                    <input type="checkbox" name="agree" value="true" id="calc-checkbox">
+                                    <label for="calc-checkbox" class="calc__submit-agree">
+                                        <div class="calc__submit-agree-checkbox"></div>
+                                        <div class="calc__submit-agree-text">
+                                            Нажимая на кнопку «Отправить» вы соглашаетесь на обработку персональных
+                                            данных в соответствии с
+                                            <a href="#" target="_blank">политикой конфиденциальности.</a>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
