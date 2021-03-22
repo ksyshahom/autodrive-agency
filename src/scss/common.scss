@@ -12,6 +12,20 @@ h2 {
   font-size: 50px;
 }
 
+.btn-wrapper {
+
+}
+
+.btn {
+  border: none;
+  background-color: $blue-color;
+  color: white;
+  cursor: pointer;
+  &--hover {
+    background-color: #202f91;
+  }
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -36,7 +50,7 @@ h2 {
     width: 65%;
   }
 
-  &--last{
+  &--last {
     margin-right: 0;
     //width: auto;
   }

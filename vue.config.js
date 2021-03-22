@@ -11,5 +11,8 @@ module.exports = {
                 'vue$': 'vue/dist/vue.esm.js',
             }
         }
+    },
+    chainWebpack: (config) => {
+        config.resolve.symlinks(false)
     }
 }
