@@ -158,7 +158,7 @@ export default {
           </div>
 
           <div class="calc__submit">
-            <div class="row row--center">
+            <div class="row row--center row--mb90">
               <div class="column column--1-3">
                 <btn btn-text="Отправить"
                      :custom-wrapper-classes="['calc__submit-btn-wrapper']"

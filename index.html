@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Autodrive agency</title>
     <link rel="stylesheet" href="./dist/main.css">
 </head>
 <body>
@@ -11,106 +11,160 @@
 
     <calc></calc>
 
-    <section class="section">
+
+    <footer class="footer">
         <div class="container">
-            <div class="section__title">
-                <h2>Получите расчет вашего проекта</h2>
-            </div>
-            <div class="calc">
-                <form enctype="multipart/form-data">
-                    <div class="calc__service">
-                        <div class="calc__service-title">Выберите услугу</div>
-                        <div class="calc__service-list">
-                            <div class="calc__service-item">
-                                <input type="radio" name="service" value="dev" id="service-dev" checked>
-                                <label for="service-dev"
-                                       class="calc__service-label calc__service-label--dev">
-                                    <div>Разработка</div>
-                                </label>
-                            </div>
-                            <div class="calc__service-item">
-                                <input type="radio" name="service" value="ctx" id="service-ctx">
-                                <label for="service-ctx"
-                                       class="calc__service-label calc__service-label--ctx">
-                                    <div>Контекст</div>
-                                </label>
-                            </div>
-                            <div class="calc__service-item">
-                                <input type="radio" name="service" value="smm" id="service-smm">
-                                <label for="service-smm"
-                                       class="calc__service-label calc__service-label--smm">
-                                    <div>SMM</div>
-                                </label>
-                            </div>
-                            <div class="calc__service-item">
-                                <input type="radio" name="service" value="seo" id="service-seo">
-                                <label for="service-seo"
-                                       class="calc__service-label calc__service-label--seo">
-                                    <div>SEO</div>
-                                </label>
-                            </div>
-                        </div>
+            <div class="footer__wrapper">
+                <div class="footer__info-container">
+                    <div class="footer__logo"></div>
+                    <div class="footer__contact-list">
+                        <div class="footer__contact-list-item footer__contact-list-item--phone">+7 (499) 391-18-83</div>
+                        <div class="footer__contact-list-item footer__contact-list-item--email">info@autodrive-agency.ru</div>
+                        <div class="footer__contact-list-item footer__contact-list-item--adress">Москва, ул. Профсоюзная 118</div>
                     </div>
-                    <div class="calc__fields">
-                        <div class="row">
-                            <div class="column column--1-3">
-                                <div class="calc__fields-item">
-                                    <input class="calc__fields-input" type="text" name="name" placeholder="Имя">
-                                </div>
-                            </div>
-                            <div class="column column--1-3">
-                                <div class="calc__fields-item calc__fields-item--phone calc__fields-item--active calc__fields-item--valid">
-                                    <input class="calc__fields-input" type="tel" name="phone"
-                                           placeholder="+7 (___) ___-__-__">
-                                </div>
-                            </div>
-                            <div class="column column--1-3  column--last">
-                                <div class="calc__fields-item">
-                                    <input class="calc__fields-input" type="text" name="email"
-                                           placeholder="Электронная почта">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="column column--1-3">
-                                <div class="calc__fields-item calc__fields-item--files">
-                                    <input class="calc__fields-input" type="file" multiple name="files" id="calc-files">
-                                    <label for="calc-files">Добавить файл(ы)</label>
-                                </div>
-                            </div>
-                            <div class="column column--2-3  column--last">
-                                <div class="calc__fields-item calc__fields-description">
-                                    <textarea name="description" placeholder="Сообщение" rows="1"></textarea>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="footer__menu-container">
+                    <div class="footer__menu-column">
+                        <div class="footer__menu-main-item">Агенство</div>
+                        <div class="footer__menu-item">О нас</div>
+                        <div class="footer__menu-item">Клиенты</div>
+                        <div class="footer__menu-item">Нас рекомендуют</div>
+                        <div class="footer__menu-item">Команда</div>
+                        <div class="footer__menu-item">Вакансии</div>
+                        <div class="footer__menu-item">Кейсы</div>
+                        <div class="footer__menu-item">Наши продукты</div>
+                        <div class="footer__menu-item">Политика конфиденциальности</div>
                     </div>
-                    <div class="calc__submit">
-                        <div class="row row--center">
-                            <div class="column column--1-3">
-                                <div class="calc__submit-btn-wrapper">
-                                    <button class="calc__submit-btn">Отправить</button>
-                                </div>
-                            </div>
-                            <div class="column column--2-3 column--last">
-                                <div class="calc__submit-agree-wrapper">
-                                    <input type="checkbox" name="agree" value="true" id="calc-checkbox">
-                                    <label for="calc-checkbox" class="calc__submit-agree">
-                                        <div class="calc__submit-agree-checkbox"></div>
-                                        <div class="calc__submit-agree-text">
-                                            Нажимая на кнопку «Отправить» вы соглашаетесь на обработку персональных
-                                            данных в соответствии с
-                                            <a href="#" target="_blank">политикой конфиденциальности.</a>
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="footer__menu-column">
+                        <div class="footer__menu-main-item">Услуги</div>
+                        <div class="footer__menu-item">SEO-продвижение</div>
+                        <div class="footer__menu-item">Контекстная реклама</div>
+                        <div class="footer__menu-item">SMM-продвижение</div>
+                        <div class="footer__menu-item">SERM</div>
+                        <div class="footer__menu-item">Разработка сайтов</div>
+                        <div class="footer__menu-item">Разработка мобильных приложений</div>
+                        <div class="footer__menu-item">Видеопродакшн</div>
+                        <div class="footer__menu-item">Медиапродакшн</div>
+                        <div class="footer__menu-item">Фотопродакшн</div>
                     </div>
-                </form>
+                    <div class="footer__menu-column">
+                        <div class="footer__menu-main-item" style="visibility: hidden">K</div>
+                        <div class="footer__menu-item">Графический дизайн</div>
+                        <div class="footer__menu-item">UX-дизайн и дизайн интерфейсов</div>
+                        <div class="footer__menu-item">Дизайн веб-баннеров</div>
+                        <div class="footer__menu-item">Дизайн мобильных приложений</div>
+                        <div class="footer__menu-item">Настройка систем веб-аналитики</div>
+                        <div class="footer__menu-item">Настройка сквозной аналитики</div>
+                        <div class="footer__menu-item">SEO-аудит</div>
+                        <div class="footer__menu-item">SMM-аудит</div>
+                        <div class="footer__menu-item">А/В тестирование</div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </section>
+    </footer>
+
+<!--    <section class="section">-->
+<!--        <div class="container">-->
+<!--            <div class="section__title">-->
+<!--                <h2>Получите расчет вашего проекта</h2>-->
+<!--            </div>-->
+<!--            <div class="calc">-->
+<!--                <form enctype="multipart/form-data">-->
+<!--                    <div class="calc__service">-->
+<!--                        <div class="calc__service-title">Выберите услугу</div>-->
+<!--                        <div class="calc__service-list">-->
+<!--                            <div class="calc__service-item">-->
+<!--                                <input type="radio" name="service" value="dev" id="service-dev" checked>-->
+<!--                                <label for="service-dev"-->
+<!--                                       class="calc__service-label calc__service-label&#45;&#45;dev">-->
+<!--                                    <div>Разработка</div>-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--                            <div class="calc__service-item">-->
+<!--                                <input type="radio" name="service" value="ctx" id="service-ctx">-->
+<!--                                <label for="service-ctx"-->
+<!--                                       class="calc__service-label calc__service-label&#45;&#45;ctx">-->
+<!--                                    <div>Контекст</div>-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--                            <div class="calc__service-item">-->
+<!--                                <input type="radio" name="service" value="smm" id="service-smm">-->
+<!--                                <label for="service-smm"-->
+<!--                                       class="calc__service-label calc__service-label&#45;&#45;smm">-->
+<!--                                    <div>SMM</div>-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--                            <div class="calc__service-item">-->
+<!--                                <input type="radio" name="service" value="seo" id="service-seo">-->
+<!--                                <label for="service-seo"-->
+<!--                                       class="calc__service-label calc__service-label&#45;&#45;seo">-->
+<!--                                    <div>SEO</div>-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="calc__fields">-->
+<!--                        <div class="row">-->
+<!--                            <div class="column column&#45;&#45;1-3">-->
+<!--                                <div class="calc__fields-item">-->
+<!--                                    <input class="calc__fields-input" type="text" name="name" placeholder="Имя">-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="column column&#45;&#45;1-3">-->
+<!--                                <div class="calc__fields-item calc__fields-item&#45;&#45;phone calc__fields-item&#45;&#45;active calc__fields-item&#45;&#45;valid">-->
+<!--                                    <input class="calc__fields-input" type="tel" name="phone"-->
+<!--                                           placeholder="+7 (___) ___-__-__">-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="column column&#45;&#45;1-3  column&#45;&#45;last">-->
+<!--                                <div class="calc__fields-item">-->
+<!--                                    <input class="calc__fields-input" type="text" name="email"-->
+<!--                                           placeholder="Электронная почта">-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="row">-->
+<!--                            <div class="column column&#45;&#45;1-3">-->
+<!--                                <div class="calc__fields-item calc__fields-item&#45;&#45;files">-->
+<!--                                    <input class="calc__fields-input" type="file" multiple name="files" id="calc-files">-->
+<!--                                    <label for="calc-files">Добавить файл(ы)</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="column column&#45;&#45;2-3  column&#45;&#45;last">-->
+<!--                                <div class="calc__fields-item calc__fields-description">-->
+<!--                                    <textarea name="description" placeholder="Сообщение" rows="1"></textarea>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="calc__submit">-->
+<!--                        <div class="row row&#45;&#45;center">-->
+<!--                            <div class="column column&#45;&#45;1-3">-->
+<!--                                <div class="calc__submit-btn-wrapper">-->
+<!--                                    <button class="calc__submit-btn">Отправить</button>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="column column&#45;&#45;2-3 column&#45;&#45;last">-->
+<!--                                <div class="calc__submit-agree-wrapper">-->
+<!--                                    <input type="checkbox" name="agree" value="true" id="calc-checkbox">-->
+<!--                                    <label for="calc-checkbox" class="calc__submit-agree">-->
+<!--                                        <div class="calc__submit-agree-checkbox"></div>-->
+<!--                                        <div class="calc__submit-agree-text">-->
+<!--                                            Нажимая на кнопку «Отправить» вы соглашаетесь на обработку персональных-->
+<!--                                            данных в соответствии с-->
+<!--                                            <a href="#" target="_blank">политикой конфиденциальности.</a>-->
+<!--                                        </div>-->
+<!--                                    </label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
 </div>
 

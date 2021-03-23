@@ -1,0 +1,83 @@
+.footer {
+  background-color: $blue-color;
+  color: white;
+
+  &__wrapper {
+    display: flex;
+    padding: 70px 0;
+    justify-content: space-between;
+  }
+
+  &__info-container {
+    width: 33%;
+  }
+
+  &__logo {
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./../src/images/icons/agency-logo.svg");
+    margin-bottom: 30px;
+  }
+
+  &__contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__contact-list-item {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    white-space: pre;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 17px;
+      height: 17px;
+      left: 0;
+      top: 3px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &--phone {
+      &::before {
+        background-image: url("./../src/images/icons/phone.svg");
+      }
+    }
+
+    &--adress {
+      &::before {
+        background-image: url("./../src/images/icons/location.svg");
+      }
+    }
+
+  }
+
+  &__menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+  }
+
+  &__menu-column {
+    width: 31%;
+  }
+
+  &__menu-main-item {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__menu-item {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
