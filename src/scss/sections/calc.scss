@@ -188,6 +188,9 @@
 
       &:focus {
         outline: none;
+        &::placeholder {
+          color: $blue-color;
+        }
       }
     }
 
