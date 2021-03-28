@@ -1,0 +1,109 @@
+.blog {
+  //background-color: #ffffff;
+  display: flex;
+  padding: 30px;  //временно
+
+  &__slide {
+    width: 410px;
+    background-color: $gray-color;
+    margin: 20px;  //временно
+  }
+
+  &__article-pic {
+    height: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("./../src/images/articles/ASBIS-HUB-Tech-Talks 1.png");
+
+  }
+
+  &__article-info {
+    //height: 184px;
+    padding-left: 30px;
+  }
+
+  &__article-badges {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  &__article-badge {
+    margin-right: 10px;
+    &:last-of-type{
+      margin: 0;
+    }
+  }
+
+  &__article-title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__article-date-views {
+    display: flex;
+    margin: 20px 0 36px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #939393;
+  }
+
+  &__article-date {
+    position: relative;
+    margin-right: 12px;
+    padding-right: 12px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 4px;
+      border-radius: 2px;
+      background-color: #939393;
+      right: -2px;
+      top: 7px;
+    }
+  }
+
+  &__article-views {
+    position: relative;
+    padding-left: 20px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 10px;
+      width: 15px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("./../src/images/icons/views.svg");
+      left: 0;
+      top: 4px;
+    }
+  }
+
+  &__read-article {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 0 25px 0 30px;
+    border-top: 1px solid #CFCFCF;
+    font-size: 16px;
+    font-weight: 500;
+    color: #939393;
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 11px;
+      width: 6px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("./../src/images/icons/read-more-arrow.svg");
+      right: 25px;
+    }
+  }
+
+}

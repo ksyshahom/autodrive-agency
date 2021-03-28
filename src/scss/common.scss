@@ -1,9 +1,9 @@
 $blue-color: #1B36F8;
-$bg-gray-color: #F1F1F1;
+$gray-color: #F1F1F1;
 
 body {
   font-family: Gilroy, Arial, serif;
-  background-color: $bg-gray-color;
+  background-color: $gray-color;
 }
 
 h2 {
@@ -29,6 +29,22 @@ a {
   cursor: pointer;
   &--hover {
     background-color: #202f91;
+  }
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue-color;
+  border-radius: 5px;
+  height: 30px;
+  padding: 0 13px;
+
+  span {
+    font-size: 14px;
+    font-weight: 800;
+    color: #FFFFFF;
   }
 }
 

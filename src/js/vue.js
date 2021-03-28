@@ -1,14 +1,20 @@
 import Vue from 'vue'
 
 // plugins
-// const VueInputMask = require('vue-inputmask').default
-// Vue.use(VueInputMask)
 
 import VueMask from 'v-mask'
 Vue.use(VueMask);
 
+// // Import Swiper Vue.js components
+// import { Swiper, SwiperSlide } from 'swiper/vue';
+//
+// // Import Swiper styles
+// // import 'swiper/swiper.scss';
+
+
 // components
 import calc from "./components/calc/calc";
+import blog_mp from "./components/blog/blog_mp";
 
 let app = new Vue({
     el: '#app',
@@ -17,5 +23,6 @@ let app = new Vue({
     },
     components: {
         calc,
+        blog_mp,
     }
 });
