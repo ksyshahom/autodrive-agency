@@ -1,18 +1,136 @@
 <script>
+
+// import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
+import {Swiper, SwiperSlide} from 'vue-awesome-swiper'
+import 'swiper/swiper.scss'
+
 export default {
   name: 'blog_mp',
-};
+  components: {
+    Swiper,
+    SwiperSlide
+  },
+  // directives: {
+  //   swiper: directive
+  // },
+}
+
+
+//obyazatel'no!!
+// export default {
+//   name: 'blog_mp',
+// };
 
 </script>
 
 <template>
   <section class="section">
-
     <div class="container">
       <div class="section__title">
         <h2>Блог</h2>
       </div>
     </div>
+
+
+    <!--    swiper slider-->
+    <div class="container container--white">
+      <div class="blog">
+
+        <swiper ref="mySwiper" :options="swiperOptions">
+          <swiper-slide>
+            <div class="blog__slide">
+              <div class="blog__article-pic"></div>
+              <div class="blog__article-info">
+                <div class="blog__article-badges">
+                  <div class="blog__article-badge badge"><span>Разработка</span></div>
+                  <div class="blog__article-badge badge"><span>Реклама</span></div>
+                </div>
+                <div class="blog__article-title">Название статьи/события1</div>
+                <div class="blog__article-date-views">
+                  <div class="blog__article-date">02 марта 2021</div>
+                  <div class="blog__article-views">1258</div>
+                </div>
+              </div>
+              <a href="#" class="blog__read-article"><span>Читать статью</span></a>
+            </div>
+
+          </swiper-slide>
+          <swiper-slide>
+            <div class="blog__slide">
+              <div class="blog__article-pic"></div>
+              <div class="blog__article-info">
+                <div class="blog__article-badges">
+                  <div class="blog__article-badge badge"><span>Разработка</span></div>
+                  <div class="blog__article-badge badge"><span>Реклама</span></div>
+                </div>
+                <div class="blog__article-title">Название статьи/события2</div>
+                <div class="blog__article-date-views">
+                  <div class="blog__article-date">02 марта 2021</div>
+                  <div class="blog__article-views">1258</div>
+                </div>
+              </div>
+              <a href="#" class="blog__read-article"><span>Читать статью</span></a>
+            </div>
+
+          </swiper-slide>
+          <swiper-slide>
+            <div class="blog__slide">
+              <div class="blog__article-pic"></div>
+              <div class="blog__article-info">
+                <div class="blog__article-badges">
+                  <div class="blog__article-badge badge"><span>Разработка</span></div>
+                  <div class="blog__article-badge badge"><span>Реклама</span></div>
+                </div>
+                <div class="blog__article-title">Название статьи/события3</div>
+                <div class="blog__article-date-views">
+                  <div class="blog__article-date">02 марта 2021</div>
+                  <div class="blog__article-views">1258</div>
+                </div>
+              </div>
+              <a href="#" class="blog__read-article"><span>Читать статью</span></a>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="blog__slide">
+              <div class="blog__article-pic"></div>
+              <div class="blog__article-info">
+                <div class="blog__article-badges">
+                  <div class="blog__article-badge badge"><span>Разработка</span></div>
+                  <div class="blog__article-badge badge"><span>Реклама</span></div>
+                </div>
+                <div class="blog__article-title">Название статьи/события4</div>
+                <div class="blog__article-date-views">
+                  <div class="blog__article-date">02 марта 2021</div>
+                  <div class="blog__article-views">1258</div>
+                </div>
+              </div>
+              <a href="#" class="blog__read-article"><span>Читать статью</span></a>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="blog__slide">
+              <div class="blog__article-pic"></div>
+              <div class="blog__article-info">
+                <div class="blog__article-badges">
+                  <div class="blog__article-badge badge"><span>Разработка</span></div>
+                  <div class="blog__article-badge badge"><span>Реклама</span></div>
+                </div>
+                <div class="blog__article-title">Название статьи/события5</div>
+                <div class="blog__article-date-views">
+                  <div class="blog__article-date">02 марта 2021</div>
+                  <div class="blog__article-views">1258</div>
+                </div>
+              </div>
+              <a href="#" class="blog__read-article"><span>Читать статью</span></a>
+            </div>
+          </swiper-slide>
+          <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
+
+      </div>
+    </div>
+
+
     <div class="container container--white">
       <div class="blog">
         <div class="blog__slide">

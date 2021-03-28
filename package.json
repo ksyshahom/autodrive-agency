@@ -27,8 +27,10 @@
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
+    "swiper": "^6.5.0",
     "v-mask": "^2.2.4",
     "vue": "^2.6.12",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-inputmask": "^0.2.1"
   }
 }

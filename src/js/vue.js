@@ -5,11 +5,11 @@ import Vue from 'vue'
 import VueMask from 'v-mask'
 Vue.use(VueMask);
 
-// // Import Swiper Vue.js components
-// import { Swiper, SwiperSlide } from 'swiper/vue';
-//
-// // Import Swiper styles
-// // import 'swiper/swiper.scss';
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/swiper.scss'
+Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
+
+
 
 
 // components
