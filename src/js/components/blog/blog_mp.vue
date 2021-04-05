@@ -1,6 +1,5 @@
 <script>
 
-// import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import {Swiper, SwiperSlide} from 'vue-awesome-swiper'
 import 'swiper/swiper.scss'
 
@@ -10,17 +9,30 @@ export default {
     Swiper,
     SwiperSlide
   },
-  // directives: {
-  //   swiper: directive
-  // },
+  data() {
+    return {
+      swiperOptions: {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        direction: 'horizontal',
+        navigation: {
+          prevEl: '.swiper-button-prev',
+          nextEl: '.swiper-button-next',
+        },
+      }
+    }
+  },
+  methods: {
+
+    prev: function () {
+      this.$refs.swiper.$swiper.slidePrev();
+    },
+
+    next: function () {
+      this.$refs.swiper.$swiper.slideNext();
+    },
+  },
 }
-
-
-//obyazatel'no!!
-// export default {
-//   name: 'blog_mp',
-// };
-
 </script>
 
 <template>
@@ -30,14 +42,10 @@ export default {
         <h2>Блог</h2>
       </div>
     </div>
-
-
-    <!--    swiper slider-->
-    <div class="container container--white">
-      <div class="blog">
-
-        <swiper ref="mySwiper" :options="swiperOptions">
-          <swiper-slide>
+    <div class="blog">
+      <div class="container">
+        <swiper class="swiper" ref="swiper" :options="swiperOptions">
+          <swiper-slide class="swiper-slide">
             <div class="blog__slide">
               <div class="blog__article-pic"></div>
               <div class="blog__article-info">
@@ -55,7 +63,7 @@ export default {
             </div>
 
           </swiper-slide>
-          <swiper-slide>
+          <swiper-slide class="swiper-slide">
             <div class="blog__slide">
               <div class="blog__article-pic"></div>
               <div class="blog__article-info">
@@ -73,7 +81,7 @@ export default {
             </div>
 
           </swiper-slide>
-          <swiper-slide>
+          <swiper-slide class="swiper-slide">
             <div class="blog__slide">
               <div class="blog__article-pic"></div>
               <div class="blog__article-info">
@@ -90,7 +98,7 @@ export default {
               <a href="#" class="blog__read-article"><span>Читать статью</span></a>
             </div>
           </swiper-slide>
-          <swiper-slide>
+          <swiper-slide class="swiper-slide">
             <div class="blog__slide">
               <div class="blog__article-pic"></div>
               <div class="blog__article-info">
@@ -107,7 +115,7 @@ export default {
               <a href="#" class="blog__read-article"><span>Читать статью</span></a>
             </div>
           </swiper-slide>
-          <swiper-slide>
+          <swiper-slide class="swiper-slide">
             <div class="blog__slide">
               <div class="blog__article-pic"></div>
               <div class="blog__article-info">
@@ -124,46 +132,26 @@ export default {
               <a href="#" class="blog__read-article"><span>Читать статью</span></a>
             </div>
           </swiper-slide>
-          <div class="swiper-pagination" slot="pagination"></div>
+          <swiper-slide class="swiper-slide">
+            <div class="blog__slide">
+              <div class="blog__article-pic"></div>
+              <div class="blog__article-info">
+                <div class="blog__article-badges">
+                  <div class="blog__article-badge badge"><span>Разработка</span></div>
+                  <div class="blog__article-badge badge"><span>Реклама</span></div>
+                </div>
+                <div class="blog__article-title">Название статьи/события6</div>
+                <div class="blog__article-date-views">
+                  <div class="blog__article-date">02 марта 2021</div>
+                  <div class="blog__article-views">1258</div>
+                </div>
+              </div>
+              <a href="#" class="blog__read-article"><span>Читать статью</span></a>
+            </div>
+          </swiper-slide>
+          <div v-on:click="prev" class="swiper-button-prev" slot="button-prev"></div>
+          <div v-on:click="next" class="swiper-button-next" slot="button-next"></div>
         </swiper>
-
-      </div>
-    </div>
-
-
-    <div class="container container--white">
-      <div class="blog">
-        <div class="blog__slide">
-          <div class="blog__article-pic"></div>
-          <div class="blog__article-info">
-            <div class="blog__article-badges">
-              <div class="blog__article-badge badge"><span>Разработка</span></div>
-              <div class="blog__article-badge badge"><span>Реклама</span></div>
-            </div>
-            <div class="blog__article-title">Название статьи/события</div>
-            <div class="blog__article-date-views">
-              <div class="blog__article-date">02 марта 2021</div>
-              <div class="blog__article-views">1258</div>
-            </div>
-          </div>
-          <a href="#" class="blog__read-article"><span>Читать статью</span></a>
-        </div>
-
-        <div class="blog__slide">
-          <div class="blog__article-pic"></div>
-          <div class="blog__article-info">
-            <div class="blog__article-badges">
-              <div class="blog__article-badge badge"><span>Менеджмент</span></div>
-              <div class="blog__article-badge badge"><span>Кейс</span></div>
-            </div>
-            <div class="blog__article-title">Название статьи/события</div>
-            <div class="blog__article-date-views">
-              <div class="blog__article-date">28 февраля 2021</div>
-              <div class="blog__article-views">1258</div>
-            </div>
-          </div>
-          <a href="#" class="blog__read-article"><span>Читать статью</span></a>
-        </div>
       </div>
     </div>
   </section>

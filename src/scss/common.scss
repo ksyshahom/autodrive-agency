@@ -1,5 +1,8 @@
 $blue-color: #1B36F8;
 $gray-color: #F1F1F1;
+$badge-gray-color: #6D7580;
+$button-gray-color: #252D30;
+
 
 body {
   font-family: Gilroy, Arial, serif;
@@ -36,7 +39,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $blue-color;
+  background-color: $badge-gray-color;
   border-radius: 5px;
   height: 30px;
   padding: 0 13px;
