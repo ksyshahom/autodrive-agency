@@ -1,0 +1,93 @@
+.clients {
+  &__icons-wrapper {
+    margin-top: 50px;
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+  }
+
+  &__icon-item {
+    border: 1px solid $gray-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    //background-size: 236px 96px;
+    //background-image: url("./../src/images/clients/kia.png");
+
+    &--kia {
+      background-size: 236px 96px;
+      background-image: url("./../src/images/clients/kia.png");
+    }
+    &--haier {
+      background-size: 277px 112px;
+      background-image: url("./../src/images/clients/haier.png");
+    }
+    &--rjd {
+      background-size: 249px 102px;
+      background-image: url("./../src/images/clients/rjd.png");
+    }
+    &--samsung {
+      background-size: 282px 114px;
+      background-image: url("./../src/images/clients/samsung.png");
+    }
+    &--rnkb {
+      background-size: 337px 138px;
+      background-image: url("./../src/images/clients/rnkb.png");
+    }
+    &--milka {
+      background-size: 280px 114px;
+      background-image: url("./../src/images/clients/milka.png");
+    }
+    &--fineti {
+      background-size: 274px 112px;
+      background-image: url("./../src/images/clients/fineti.png");
+    }
+    &--raif-bank {
+      background-size: 270px 110px;
+      background-image: url("./../src/images/clients/raif.png");
+    }
+    &--bmw {
+      background-size: 300px 122px;
+      background-image: url("./../src/images/clients/bmw.png");
+    }
+    &--rosbank {
+      background-size: 316px 128px;
+      background-image: url("./../src/images/clients/rosbank.png");
+    }
+    &--rolf {
+      background-size: 178px 37px;
+      background-image: url("./../src/images/clients/rolf.png");
+    }
+    &--uralsib {
+      background-size: 305px 124px;
+      background-image: url("./../src/images/clients/uralsib.png");
+    }
+  }
+
+  &__see-more {
+    padding: 60px 0;
+    text-align: center;
+
+    a {
+      position: relative;
+      color: #000000;
+      border: 1px solid $gray-color;
+      padding: 11px 35px 15px 20px;
+      font-size: 24px;
+      font-weight: 400;
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: 22px;
+        right: 22px;
+        height: 11px;
+        width: 6px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("./../src/images/icons/arrow-black.svg");
+      }
+    }
+  }
+}
