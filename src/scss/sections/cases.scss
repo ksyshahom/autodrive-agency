@@ -1,0 +1,79 @@
+.cases {
+
+  &__case-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -24px 15px;
+  }
+
+  &__case-item {
+    width: calc(50% - 48px);
+    margin: 20px 24px 55px 24px;
+  }
+
+  &__case-pic {
+    position: relative;
+    height: 0;
+    padding-top: 60%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .row {
+
+    margin-top: 20px;
+  }
+
+  &__case-badges {
+    display: flex;
+  }
+
+  &__case-badge {
+    margin-right: 10px;
+  }
+
+  &__case-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  &__case-description {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &__see-more {
+    text-align: center;
+    padding: 0 0 60px;
+
+    a {
+      background-color: #FFFFFF;
+      position: relative;
+      color: #000000;
+      border: 1px solid #E1E1E1;
+      padding: 11px 35px 15px 20px;
+      font-size: 24px;
+      font-weight: 400;
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: 22px;
+        right: 22px;
+        height: 11px;
+        width: 6px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("./../src/images/icons/arrow-black.svg");
+      }
+    }
+
+  }
+}

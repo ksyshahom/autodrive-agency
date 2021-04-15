@@ -11,12 +11,20 @@
       margin-bottom: 50px;
       padding-left: 25px;
 
+
       &:before {
         content: '/';
         position: absolute;
         left: 0;
         color: $blue-color;
         font-weight: 900;
+      }
+    }
+
+
+    &--mb0 {
+      h2{
+        margin-bottom: 0;
       }
     }
   }
