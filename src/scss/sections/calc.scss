@@ -16,6 +16,7 @@
   &__service-item {
     input {
       display: none;
+
       &:checked {
         & + label {
           background-color: $blue-color;
@@ -163,6 +164,7 @@
 
     &:focus {
       outline: none;
+
       &::placeholder {
         color: $blue-color;
       }
@@ -188,6 +190,7 @@
 
       &:focus {
         outline: none;
+
         &::placeholder {
           color: $blue-color;
         }
@@ -202,12 +205,22 @@
     height: 70px;
     font-weight: 700;
     font-size: 20px;
+
+    background-color: $blue-color;
+    color: white;
+
+    &--hover {
+      background-color: #202f91;
+    }
+
+
   }
 
   &__submit-agree-wrapper {
 
     input {
       display: none;
+
       &:checked {
         & + label {
           #{$this}__submit-agree-checkbox {
@@ -234,17 +247,12 @@
     width: 30px;
     height: 30px;
     border: 1px solid #757575;
-
-    //&--checked {
-    //  background-repeat: no-repeat;
-    //  background-position: center;
-    //  background-image: url("./../src/images/icons/check.svg");
-    //}
   }
 
   &__submit-agree-text {
     padding-left: 20px;
     width: 90%;
+
     a {
       color: $blue-color;
       text-decoration: underline $blue-color;

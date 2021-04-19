@@ -1,7 +1,7 @@
 $blue-color: #1B36F8;
 $gray-color: #F1F1F1;
 $badge-gray-color: #6D7580;
-$button-gray-color: #252D30;
+$button-gray-color: #252d30;
 
 
 body {
@@ -21,15 +21,13 @@ a {
   color: white;
 }
 
-.btn {
+button {
+  padding: 0;
   border: none;
-  background-color: $blue-color;
-  color: white;
   cursor: pointer;
-  &--hover {
-    background-color: #202f91;
-  }
 }
+
+
 
 .badge {
   display: flex;
@@ -105,22 +103,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFFFFF;
   border-radius: 5px;
   height: 47px;
   width: 190px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #000000;
-  cursor: pointer;
 
-  &:last-of-type{
+  &--last {
     margin: 0;
-  }
-
-  &--active {
-    background-color: $button-gray-color;
-    color: #FFF;
   }
 }
 

@@ -27,8 +27,8 @@ export default {
 </script>
 
 <template>
-  <div class="btn-wrapper" :class="customWrapperClasses">
-    <button class="btn" :class="customClasses">{{ btnText }}</button>
+  <div :class="customWrapperClasses">
+    <button :class="customClasses">{{ btnText }}</button>
   </div>
 </template>
 
