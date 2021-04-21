@@ -3,55 +3,50 @@
 export default {
   name: 'tab',
   props: {
+    tabId: {
+      type: String,
+      default: null,
+      required: true,
+    },
     tabText: {
       type: String,
       default: null,
       required: true,
     },
-    customWrapperClasses: {
-      type: Array,
-      default: [],
-      required: false,
-    },
     customClasses: {
       type: Array,
-      default: [],
+      default: function () {
+        return [];
+      },
       required: false,
     },
-    isActive: {
-      type: Boolean,
-      default: false,
-      required: false,
+    selectedTabs: {
+      type: Array,
+      default: function () {
+        return [];
+      },
+      required: true,
     },
   },
-  methods: {
-    activeClassToggle: function() {
-      console.log("1 " + this.isActive);
-      this.isActive = !this.isActive;
-      console.log("2 " + this.isActive);
-      console.log(this.customClasses);
-      if (this.isActive == true) {
-        this.customClasses.push("cases__tab--active");
-      }
-      else {
-        for( var i = 0; i < this.customClasses.length; i++){
-          if ( this.customClasses[i] === "cases__tab--active") {
-            this.customClasses.splice(i, 1);
-          }
-        }
-      }
-      console.log(this.customClasses);
-    }
-  }
+  computed: {
+
+    activeClass: function () {
+      return {
+        'cases__tab--active': this.selectedTabs.includes(this.tabId),
+      };
+    },
+
+  },
+  inject: ['toggleTab'],
 }
 
 </script>
 
 <template>
-  <div :class="customWrapperClasses">
+  <div>
     <button class="tab cases__tab"
-            :class="customClasses"
-            v-on:click="activeClassToggle">
+            :class="[customClasses, activeClass]"
+            v-on:click="toggleTab(tabId)">
       {{ tabText }}
     </button>
   </div>
